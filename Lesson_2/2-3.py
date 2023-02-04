@@ -17,7 +17,7 @@
 n = int(input())
 count = 0
 max = 0
-for i in range(n):
+for i in range(n): #range перебирает значения от 1 до n
     temp = int(input())
     if temp > 0:
         count += 1
