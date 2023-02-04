@@ -9,15 +9,8 @@
 s = int(input())
 p = int(input())
 
-# d = s * s - 4 * p
-# x = (s + d ** (1.0 / 2)) / 2
-# y = (s - d ** (1.0 / 2)) / 2
+d = s * s - 4 * p
+x = (s + d ** (1.0 / 2)) / 2
+y = (s - d ** (1.0 / 2)) / 2
 
-x = 0
-y = 0
-i = 0
-while x * y != p:
-    x = s - i
-    y = s - x
-    i += 1
 print(x, y)
