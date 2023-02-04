@@ -2,11 +2,11 @@
 # n!. N! = 1*2*3*...*N (произведение всех чисел от 1 до N).
 # 0! = 1 Решить задачу испобзуя цикл while
 
-N = int(input())
+n = int(input())
 fact = 1
 
-while N:
-    fact *= N
-    N -= 1
+while n:
+    fact *= n
+    n -= 1
 
 print(fact)
