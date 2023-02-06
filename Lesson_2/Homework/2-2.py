@@ -8,9 +8,14 @@
 
 s = int(input())
 p = int(input())
+answer = "I didn't guess"
 
 d = s * s - 4 * p
-x = (s + d ** (1.0 / 2)) / 2
-y = (s - d ** (1.0 / 2)) / 2
 
-print(x, y)
+if d >= 0:
+    x = (s + d ** 0.5) //2
+    y = (s - d ** 0.5) // 2
+    if x * y == p:
+        answer = f"{x}, {y}"
+
+print(answer)
