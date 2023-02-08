@@ -13,7 +13,7 @@ n = int(input("Введите число: "))
 list = []
 for i in range(1, n + 1):
     list.append(i)
-print(list)
+print(*list)
 
 x = int(input("Введите искомое число: "))
 print(sum([1 for i in range(len(list)) if list[i] == x]))
