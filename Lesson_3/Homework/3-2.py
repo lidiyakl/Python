@@ -9,14 +9,15 @@
 # 1 2 3 4 5
 # 6-> 5
 
+from random import randint
+
 n = int(input("Введите количество элементов: "))
-list = []
-for i in range(1, n + 1):
-    list.append(i)
+list = [randint(1, n) for _ in range(n)]
 print(*list)
 
 x = int(input("Введите число: "))
-for i in range(len(list)):
-    if x - list[i] == 1:
-        print(list[i])
-        break
+num = list[0]
+for i in list:
+    if abs(x - i) < abs(x - num):
+        num = i
+print(num)

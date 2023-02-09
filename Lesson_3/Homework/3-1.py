@@ -9,11 +9,11 @@
 # 1 2 3 4 5
 # 3-> 1
 
+from random import randint
+
 n = int(input("Введите число: "))
-list = []
-for i in range(1, n + 1):
-    list.append(i)
+list = [randint(1, n) for _ in range(n)]
 print(*list)
 
 x = int(input("Введите искомое число: "))
-print(sum([1 for i in range(len(list)) if list[i] == x]))
+print(sum(1 for i in range(len(list)) if list[i] == x))
