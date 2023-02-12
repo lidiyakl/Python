@@ -14,8 +14,8 @@
 # кустом заданной во входном файле грядки.
 
 n = int(input())
-list = [int(input()) for _ in range(n)]
-max = 0
+list = [int(input()) for _ in range(n)] # list = [int[i] for i in input().split()]
+max = 0                                 # вводим строкой значения
 for i in range(n):
     if list[i - 1] + list[i] + list[i - 2] > max:
         max = list[i - 1] + list[i] + list[i - 2]
