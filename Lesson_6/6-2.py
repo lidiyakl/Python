@@ -8,3 +8,9 @@ for i in range(1, len(a) - 1):
     if a[i] == max(a[i - 1 : i + 2]):
         count += 1
 print(count)
+
+# вар 2
+# print(len([i for i in range(1, len(a) - 1) if a[i] > a[i - 1] and a[i] > a[i + 1]]))
+
+# вар 3
+# print(len([i for i in range(1, len(a) - 1) if a[i] == max(a[i - 1 : i + 2])]))
