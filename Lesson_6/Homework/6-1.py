@@ -10,3 +10,7 @@ num = int(input("Введите первый элемент: "))
 
 list = [num + i * d for i in range(n)]
 print(*list)
+
+# var 2
+# for i in range(n):
+#     print(num + i * d, end=' ')
