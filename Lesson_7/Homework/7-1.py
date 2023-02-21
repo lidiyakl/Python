@@ -19,7 +19,7 @@ def rythm(list):
     return "Парам пам-пам" if len(set(list)) == 1 else "Пам парам"
 
 
-song = list(map(str, input().split()))
+song = list(map(str, input().split())) #input().split()
 glas = ["А", "О", "Е", "Э", "И", "Ы", "Я", "Ё", "У", "Ю"]
 sums = [sum([1 for j in i if j.upper() in glas]) for i in song]
 print(sums)

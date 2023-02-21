@@ -21,7 +21,7 @@ def operation_table(num_rows, num_columns):
 def print_operation_table(operation, num_rows, num_columns):
     for i in range(1, num_rows + 1):
         for j in range(1, num_columns + 1):
-            print(f"{operation(i,j)}".rjust(4), end = " ")
+            print(f"{operation(i,j)}".rjust(4), end = " ") #вместо rjust(4) можно :4 в {} после функции
         print()
 
 
